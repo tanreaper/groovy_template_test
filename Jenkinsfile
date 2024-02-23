@@ -6,7 +6,9 @@ pipeline {
     agent any
     stages {
         stage('checkout and set agent') {
-            echo "${env.ProjectId}"
+            script{
+                echo "${env.ProjectId}"
+            }
         }
         stage('Just a checkpoint') {
             steps {
