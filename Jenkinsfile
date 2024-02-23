@@ -10,4 +10,13 @@ pipeline {
     agent {
         label "$AGENT_LABEL"
     }
+    stages {
+        stage('Just a checkpoint') {
+            steps {
+                script {
+                    sh "echo Test"
+                }
+            }
+        }
+    }
 }
