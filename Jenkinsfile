@@ -7,9 +7,7 @@ node('master') {
 }
 
 pipeline {
-    agent {
-        label "$AGENT_LABEL"
-    }
+    agent any
     stages {
         stage('Just a checkpoint') {
             steps {
