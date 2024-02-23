@@ -8,7 +8,7 @@ pipeline {
         stage('checkout and set agent') {
             steps {
                 script{
-                    echo "${env.ProjectId}"
+                    echo "${env}"
                 }
             }
         }
